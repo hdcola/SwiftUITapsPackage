@@ -88,6 +88,7 @@ struct CreateSearchableDynamicSuggestionsView: View {
                     .autocapitalization(.none)
                     .border(.black)
             }
+            .navigationViewStyle(.stack)
             .frame(height: 200)
         }
     }
@@ -153,6 +154,7 @@ struct CreateSearchableSuggestionsView: View {
                         .searchCompletion("toronto")
                 }
             }
+            .navigationViewStyle(.stack)
         }
     }
 }
@@ -203,6 +205,7 @@ struct CreateSearchableFilterView: View {
                 }
                 .searchable(text: $query, prompt: "city search")
             }
+            .navigationViewStyle(.stack)
         }
     }
 }
@@ -237,6 +240,7 @@ private struct CreateSearchableDemoView: View {
                 }
                 .searchable(text: $searchText, prompt: "Input text")
             }
+            .navigationViewStyle(.stack)
             .frame(height: 200)
         }
     }
